@@ -1,0 +1,88 @@
+--copy paste this into your oracle db to create the database needed for book my show
+
+set linesize 200;
+
+--reservation rno sequence
+create sequence rno
+start with 100;
+
+--login information
+create table logininfo(
+username varchar(20) not null,
+password varchar(20) not null,
+pnumber number(10) primary key,
+address varchar(30));
+
+--movie info
+create table movies(
+mid char(4) primary key,
+name varchar(10) not null,
+type char(2),
+lang char(2),
+genre varchar(10));
+
+--movie info values
+insert into movies values('EN01', 'Spider Man', '3D', 'EN', 'Action'); 
+insert into movies values('TU01', 'Pushpa', '2D', 'TU', 'Thriller'); 
+insert into movies values('MA01', 'Kurup', '2D', 'MA', 'Crime');
+insert into movies values('TA01', 'Rocky', '2D', 'TA', 'Action');  
+
+--theatre info
+create table theatres(
+tid char(4) not null,
+mid char(4) not null,
+foreign key (mid) references movies(mid),
+name varchar(20) not null,
+mdate date not null,
+mtime char(5),
+seats number(3) not null,
+price number(3) not null);
+
+--theatre info values
+insert into theatres values('KKIN', 'EN01', 'INOX KK Nagar', '06-JAN-22' , '20:15', 100, 250);
+insert into theatres values('KKIN', 'TU01', 'INOX KK Nagar', '07-JAN-22' , '10:15', 150, 150);
+insert into theatres values('KKIN', 'MA01', 'INOX KK Nagar', '06-JAN-22' , '8:35', 200, 150);
+insert into theatres values('KKIN', 'TA01', 'INOX KK Nagar', '06-JAN-22' , '20:15', 200, 150);
+
+insert into theatres values('VALU', 'EN01', 'LUXE Vadapalani', '06-JAN-22', '21:20', 120, 250);
+insert into theatres values('VALU', 'TU01', 'LUXE Vadapalani', '07-JAN-22' , '9:35', 100, 150);
+insert into theatres values('VALU', 'MA01', 'LUXE Vadapalani', '06-JAN-22' , '12:50', 90, 100);
+insert into theatres values('VALU', 'TA01', 'LUXE Vadapalani', '06-JAN-22' , '16:15', 200, 100);
+
+insert into theatres values('ANLU', 'EN01', 'LUXE Anna Nagar', '06-JAN-22' , '13:00', 240, 300);
+insert into theatres values('ANLU', 'TU01', 'LUXE Anna Nagar', '07-JAN-22' , '12:15', 120, 250);
+insert into theatres values('ANLU', 'MA01', 'LUXE Anna Nagar', '06-JAN-22' , '8:35', 120, 150);
+insert into theatres values('ANLU', 'TA01', 'LUXE Anna Nagar', '06-JAN-22' , '22:15', 100, 100);
+
+--current bookings info
+create table bookings(
+pno number(10),
+foreign key (pno) references logininfo (pnumber),
+rno number(5),
+tid char(4) not null,
+mid char(4) not null,
+mdate date not null,
+mtime char(5) not null);
+
+--triggers
+create or replace trigger capsname
+before
+insert on logininfo
+for each row
+begin
+:new.username :=upper(:new.username);
+end;
+/
+
+create or replace trigger phonenumber
+before 
+insert on logininfo
+for each row
+begin
+if length(to_char(:new.pnumber)) < 10 then
+raise_application_error(-20102, 'Phone number invalid');
+end if;
+end;
+/
+
+commit;
