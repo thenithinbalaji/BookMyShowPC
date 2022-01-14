@@ -17,3 +17,5 @@ in [BookMyShow.py](BookMyShow.py)
 ## Note
 The images used in this app can be downloaded from [Assets](assets).          
 [App Snippets](snippets) contains the app snippets.
+
+App by [@thenithinbalaji](https://github.com/thenithinbalaji) [@Nivetha2206](https://github.com/Nivetha2206) [@Mugilan10](https://github.com/Mughilan10)
