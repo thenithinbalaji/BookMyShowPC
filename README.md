@@ -2,7 +2,7 @@
 ## What is this?
 Movie Ticket Reservation App made with Tkinter.       
 [Tkinter](https://en.wikipedia.org/wiki/Tkinter) is a Python binding to the [Tk GUI toolkit](https://en.wikipedia.org/wiki/Tk_(software)). 
-
+![app snippet](snippets/starting%20page.png)
 ## How to run this?
 + Download the [BookMyShow.py](BookMyShow.py)   
 + Change the [connection string](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22system/nithin%40localhost%3A1521/xe%22) in [BookMyShow.py](BookMyShow.py) according to your database.
@@ -13,7 +13,7 @@ Movie Ticket Reservation App made with Tkinter.
 in [BookMyShow.py](BookMyShow.py)
 + Create table based on schema in [DB Schema Commands](DB%20Schema%20Commands.txt)
 + Execute [BookMyShow.py](BookMyShow.py) 
-
+![app snippet](snippets/signup%20page.png)
 ## Note
 The images used in this app can be downloaded from [Assets](assets).          
 [App Snippets](snippets) contains the app snippets.
