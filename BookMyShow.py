@@ -3,8 +3,8 @@ from tkinter import *
 from tkinter import font
 from tkinter import messagebox  
 
-img1path = "C:/Users/Nithin/OneDrive/Desktop/bg1.png"
-img2path = "C:/Users/Nithin/OneDrive/Desktop/bg2.png"
+img1path = "assets/bg1.png"
+img2path = "assets/bg2.png"
 connectionstring = "system/nithin@localhost:1521/xe"
 
 #Oracle 11G was used as the db for this project
