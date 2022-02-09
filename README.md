@@ -9,7 +9,7 @@ Movie Ticket Reservation App made with Tkinter.
   + By default it is for Oracle SQL Plus.
   + Change [username/password](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22-,system/nithin,-%40localhost%3A1521/xe) if you are using Oracle SQL Plus.
   + Install cx_Oracle Module using pip.
-+ Change [image paths](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=img1path%20%3D%20%22C%3A/Users,Desktop/bg2.png%22) 
++ Change [image paths](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=img1path%20%3D%20%22assets/bg1,assets/bg2.png%22) 
 in [BookMyShow.py](BookMyShow.py) if you want to use a different background. 
 + Create table based on schema in [DB Schema Commands](DB%20Schema%20Commands.txt)
 + Execute [BookMyShow.py](BookMyShow.py) 
