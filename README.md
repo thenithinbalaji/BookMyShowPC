@@ -2,7 +2,7 @@
 
 ## What is this?
 
-Movie Ticket Reservation App made with [Tkinter](https://en.wikipedia.org/wiki/Tkinter) and 
+Movie Ticket Reservation App made with Oracle SQL, [Tkinter](https://en.wikipedia.org/wiki/Tkinter) and 
 
 <p align="center">
   <a href="https://github.com/thenithinbalaji/BookMyShowPC">
@@ -23,13 +23,11 @@ Thanks to tkinter.
 
 ## How to run this?
 
-+ Install Oracle SQL Plus. 
-+ Clone this repo.    
-+ Change the [connection string](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22system/nithin%40localhost%3A1521/xe%22) in [BookMyShow.py](BookMyShow.py) according to yours.
-  + Change [username/password](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22-,system/nithin,-%40localhost%3A1521/xe) if you are using Oracle SQL Plus.
+Install Oracle SQL Plus. \
+Clone this repo.    
+  + Change the connection string - username/password in [BookMyShow.py](BookMyShow.py) 
   + Create virtual environment and install missing modules using 
   
-  <br/>
   
   ```
   pip install -r requirements.txt
