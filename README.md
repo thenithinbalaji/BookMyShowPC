@@ -6,7 +6,7 @@ Movie Ticket Reservation App made with [Tkinter](https://en.wikipedia.org/wiki/T
 
 <p align="center">
   <a href="https://github.com/thenithinbalaji/BookMyShowPC">
-    <img src="https://skillicons.dev/icons?i=python,mysql,git,sqlite,vscode" />
+    <img src="https://skillicons.dev/icons?i=python,git,vscode" />
   </a>
 </p>
 
