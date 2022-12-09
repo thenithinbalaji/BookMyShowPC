@@ -23,9 +23,9 @@ Thanks to tkinter.
 
 ## How to run this?
 
++ Install Oracle SQL Plus. 
 + Clone this repo.    
-+ Change the [connection string](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22system/nithin%40localhost%3A1521/xe%22) in [BookMyShow.py](BookMyShow.py) according to your database.
-  + By default it is for Oracle SQL Plus.
++ Change the [connection string](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22system/nithin%40localhost%3A1521/xe%22) in [BookMyShow.py](BookMyShow.py) according to yours.
   + Change [username/password](https://github.com/thenithinbalaji/BookMyShowPC/blob/main/BookMyShow.py#:~:text=connectionstring%20%3D%20%22-,system/nithin,-%40localhost%3A1521/xe) if you are using Oracle SQL Plus.
   + Create virtual environment and install missing modules using 
   
@@ -35,10 +35,9 @@ Thanks to tkinter.
   pip install -r requirements.txt
   ```
    
-+ Create table based on schema in [DB Schema Commands](DB%20Schema%20Commands.txt)
-+ Execute [BookMyShow.py](BookMyShow.py) 
+  + Create table based on schema in [DB Schema Commands](DB%20Schema%20Commands.txt)
++ Run [BookMyShow.py](BookMyShow.py) 
 
-<br/>
 
 ![app snippet](snippets/signup%20page.png)
 
